@@ -7,6 +7,7 @@
         "machine_type": "",
         "cluster_name": "",
         "mesos_version": "0.28.0",
+        "marathon_version": "0.15.3",
         "image_name": "hyperion-mesos-0-1-0-v20160322",
         "image_description": "Mesos Base Image for Hyperion"
     },
@@ -33,7 +34,8 @@
                  "sudo mv /tmp/mesosphere.list /etc/apt/sources.list.d/mesosphere.list",
                  "sudo apt-get -y update",
                  "sudo apt-cache policy mesos",
-                 "sudo apt-get -y install mesos={{ user `mesos_version` }}-2.0.16.debian81"
+                 "sudo apt-cache policy marathon",
+                 "sudo apt-get -y install mesos={{ user `mesos_version` }}-2.0.16.debian81 marathon={{ user `marathon_version` }}-1.0.463.debian81"
              ]
          }
     ]

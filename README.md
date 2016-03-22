@@ -35,6 +35,9 @@ Read guides to creates the infrastructure :
 
 ## Usage
 
+* Visit Mesos UI on the master on port `5050`
+
+* Visit Marathon UI on the master on port `8080`
 
 
 ## Contributing
